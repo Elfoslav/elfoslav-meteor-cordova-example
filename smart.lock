@@ -2,13 +2,19 @@
   "meteor": {},
   "dependencies": {
     "basePackages": {
-      "cordova": {}
+      "cordova": {},
+      "LazyLoad": {}
     },
     "packages": {
       "cordova": {
         "git": "https://github.com/raix/Meteor-cordova.git",
         "tag": "v0.0.8",
         "commit": "4eff8b9a853673f5f4b450a0102e78f554836da4"
+      },
+      "LazyLoad": {
+        "git": "https://github.com/raix/Meteor-LazyLoad.git",
+        "tag": "v0.0.2",
+        "commit": "668aba4f7a074bb5baf8ea06869f2cd4d59beb2a"
       }
     }
   }

@@ -7,7 +7,17 @@
 </body>
 
 <template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+  <h1>Hello MeteorCordova!</h1>
+  <p>{{greeting}}</p>
+  {{#if deviceready}}
+    <p>Device is ready</p>
+  {{else}}
+    <p>Waiting for deviceready event</p>
+  {{/if}}
+
+  <p><input class="cordova-alert" type="button" value="Cordova alert" /></p>
+  <p><input class="cordova-confirm" type="button" value="Cordova confirm" /></p>
+  <p><input class="cordova-prompt" type="button" value="Cordova prompt" /></p>
+  <p><input class="cordova-beep" type="button" value="Cordova beep" /></p>
+  <p><input class="cordova-vibrate" type="button" value="Cordova vibrate" /></p>
 </template>
